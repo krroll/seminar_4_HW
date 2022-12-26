@@ -51,6 +51,15 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-
-
-
+int [] GetArray ()
+{
+    int [] array = new int [8];
+    for (int i =0; i< array.Length; i++)
+    {
+        Console.Write("Введите [" + i + "] элемент: ");
+        array[i]=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+    }
+    return array;
+}
+Console.WriteLine(String.Join(",",GetArray()));
